@@ -1,0 +1,3 @@
+[submodule "www/writing"]
+	path = www/writing
+	url = git@github.com:irbowen/writing.git
