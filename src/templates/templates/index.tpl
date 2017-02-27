@@ -18,8 +18,6 @@
            <a href="#one" class="goto-next scrolly">Next</a>
          </section>
 
-
-
          <!-- One -->
          <section id="one" class="spotlight style1 bottom">
            <span class="image fit main"><img src="images/inode.png" alt="" /></span>
@@ -38,7 +36,7 @@
                  <div class="4u$ 12u$(medium)">
                    <p>I did a lot while I taught this class - writing a new project, maintaining the autograder, holding regular office hours, and teaching discussion.</p>
                    <ul class="actions">
-                     <li><a href="eecs485.html" class="button">Learn More</a></li>
+                     <li><a href="/eecs485" class="button">Learn More</a></li>
                    </ul>
                  </div>
                </div>
@@ -74,7 +72,6 @@
            <a href="#three" class="goto-next scrolly">Next</a>
          </section>
 
-         <!-- Three -->
          <section id="three" class="spotlight style3 right">
            <span class="image fit main bottom"><img src="images/umtri.png" alt="" /></span>
            <div class="content">
@@ -117,7 +114,7 @@
              <div class="box alt">
                <div class="row uniform">
                  <section class="4u 6u$(medium) 12u$(xsmall)">
-                   <h3>The beginning <br/> College Pro Painters</h3>
+                   <h3>The Beginning <br/> College Pro Painters </h3>
                    <p>
                    I climbed high ladders carrying heaving buckets of paint in the hot sun
                    I was good at it, and got promoted to job site manager
@@ -125,39 +122,23 @@
                    </p>
                  </section>
                  <section class="4u 6u(medium) 12u$(xsmall)">
-                   <h3>The beginning <br/> Dininng Hall</h3>
+                   <h3>The Beginning <br/> Dininng Hall </h3>
                    <p>
                    Then, I started working at the dining hall.
                    I noticed pretty quicky that dishroom was my jam.
-                   Again, I was really good at it, and I moved up to a student coordinator</p>
+                   Again, I was really good at it, and I moved up to a student coordinator very quickly. I worked there too much, got in trouble for working overtime a few times.
+                   I worked there for the better part of two years. Learned a lot. </p>
                  </section>
                  <section class="4u 6u(medium) 12u$(xsmall)">
-                   <h3>The beginning <br/>UMTRI </h3>
+                   <h3>The Beginning <br/> UMTRI </h3>
                    <p>
                    At UMTRI (University of Michigan Transportation Research Institute), 
                    I performed IT tasks for a research office of ~150 people.
                    This included setting up servers, debugging and installing software on workstations, managing the internal LAN, etc.
                    </p>
                  </section>
-                 <section class="4u 6u$(medium) 12u$(xsmall)">
-                   <h3>Next steps <br/>College of Engineering </h3>
-                   <p>Web devolper</p>
-                 </section>
-                 <section class="4u 6u(medium) 12u$(xsmall)">
-                   <h3>Next steps <br/>Google</h3>
-                   <p>Cool things</p>
-                 </section>
-                 <section class="4u$ 6u$(medium) 12u$(xsmall)">
-                   <h3>Next steps <br/>College of Engineering </h3>
-                   <p>Web devolper</p>
-                 </section>
                </div>
              </div>
-             <footer class="major">
-               <ul class="actions">
-                 <li><a href="#" class="button">Magna sed feugiat</a></li>
-               </ul>
-             </footer>
            </div>
          </section>
 
