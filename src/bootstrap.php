@@ -23,7 +23,7 @@ $klein->respond('GET', '/',
   function ($request, $response, $service, $app) {
     $app->smarty->assign('title', 'Isaac Bowen');
     $app->smarty->assign('image_dir', 'images');
-    $app->smarty->display('index.tpl');
+    $app->smarty->display('index/index.tpl');
   });
 
 $klein->respond('GET', '/eecs485/',
