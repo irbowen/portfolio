@@ -6,11 +6,8 @@
          <section id="banner">
            <div class="content">
              <header>
-               <h2>Why should you hire me?</h2>
+               <h2>Why?</h2>
                <p> I build software<br />
-               The best software <br/>
-               Big-league software. <br/>
-               Huge systems. <br/>
                And you're going to pay me for it</p>
              </header>
              <span class="image"><img src="{$image_dir}/isaac_.jpg" alt="" /></span>
