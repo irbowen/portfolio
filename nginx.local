@@ -1,0 +1,21 @@
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	root /var/www/html/portfolio/public;
+
+	index index.php;
+
+	server_name irbowen.io;
+
+	location / {
+		try_files $uri $uri/ /?$args;
+	}
+	location ~ \.php$ {
+		include snippets/fastcgi-php.conf;
+		fastcgi_pass unix:/run/php/php7.0-fpm.sock;
+		include fastcgi_params;
+	}
+}
+
+
