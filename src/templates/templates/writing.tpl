@@ -18,6 +18,11 @@
                 <ul>
                   <li><a href="/writing/Vagrant.html">Vagrant + VirtualBox </a></li>
                 </ul>
+                  {foreach $article_list as $a}
+                  <ul>
+                    <li><a href="/blog/{$a['link']}">{$a['title']}</a></li>
+                  </ul>
+                  {/foreach}
               </section>
             </section>
 
