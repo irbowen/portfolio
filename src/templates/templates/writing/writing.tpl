@@ -8,8 +8,8 @@
             <h2>Blog</h2>
             <p>Some things I've written</p>
           </header>
-          <div class="row 150%">
-            <div class="4u 12u$(medium)">
+          <div class="row 100%">
+            <div class="2u 2u$(medium)">
 
               <!-- Sidebar -->
               <section id="sidebar">
@@ -23,7 +23,7 @@
               </section>
 
             </div>
-            <div class="8u$ 12u$(medium) important(medium)">
+            <div class="1u$ 2u$(medium) important(medium)">
 
               <section id="content">
                 <h3>Most recent data here</h3>
