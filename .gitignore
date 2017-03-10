@@ -1,2 +1,3 @@
 src/templates/templates_c/*.php
 vendor/*
+composer.lock
