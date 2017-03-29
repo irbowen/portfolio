@@ -8,7 +8,7 @@
           <h2>{$post_name}</h2>
         </header>
         <div class="row 150%">
-          <div class="4u 12u$(medium)">
+          <div class="3u 12u$(medium)">
 
             <!-- Sidebar -->
             <section id="sidebar">
@@ -27,7 +27,7 @@
             </section>
 
           </div>
-          <div class="8u$ 12u$(medium) important(medium)">
+          <div class="9u$ 12u$(medium) important(medium)">
 
             <section id="content">
                 {$contents}

@@ -2,34 +2,34 @@
 
 require_once __DIR__ . '/../../vendor/autoload.php';
 
-// This file stores all of the articles to post on the blog
-define('LIST_FILE', __DIR__ . '/../writing/list_of_files');
-
-/*
- * Routes
- */
-
-$this->respond('GET', '/', blog_front_page);
-$this->respond('GET', '/[a:post_name]', blog_with_article);
-
 
 /*
  * Functions
+$this->respond('GET', '/', blog_front_page);
+$this->respond('GET', '/[a:post_name]', blog_with_article);
  */
-
+/*
 function blog_front_page($request, $response, $service, $app) {
     $article_data = file(LIST_FILE);
     $data = explode(',', $article_data[0]);
-    $title = str_replace('"', '', $data[0]);
-    $file_contents = get_article_text(trim($data[1]));
-    $app->smarty->assign('article_list', get_all_article_titles());
-    $app->smarty->assign('post_name', $title);
-    $app->smarty->assign('contents', $file_contents);
-    $app->smarty->display('writing.tpl');
+    $request->title = str_replace('"', '', $data[0]);
+    $request->file_contents = get_article_text(trim($data[1]));
+    show_blog($request, $response, $service, $app);
 };
 
 function blog_with_article($request, $response, $service, $app) {
+    // TODO fix this 
     $app->smarty->assign('post_name', $request->post_name);
+    $app->smarty->display('writing.tpl');
+    show_blog($request, $response, $service, $app);
+};
+ */
+
+// Common behavior
+function show_blog($request, $response, $service, $app) {
+    $app->smarty->assign('post_name', $request->title);
+    $app->smarty->assign('contents', $request->file_contents);
+    $app->smarty->assign('article_list', get_all_article_titles());
     $app->smarty->display('writing.tpl');
 };
 
@@ -37,7 +37,8 @@ function blog_with_article($request, $response, $service, $app) {
  * Helper functions
  */
 
-function get_article_text($title): string {
+// Returns the text contents of the article
+function get_article_text($title) : string {
     $full_name = __DIR__ . "/../writing/$title";
     $file_contents = file_get_contents($full_name);
     if ($file_contents === false) {
@@ -46,7 +47,8 @@ function get_article_text($title): string {
     return $file_contents;
 }
 
-function get_all_article_titles() {
+// Returns all of the article titles and links
+function get_all_article_titles() : array {
     $article_data = file(LIST_FILE);
     $titles = array();
     foreach ($article_data as $article) {
@@ -57,3 +59,4 @@ function get_all_article_titles() {
     }
     return $titles;
 }
+

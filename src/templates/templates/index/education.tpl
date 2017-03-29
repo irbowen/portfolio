@@ -17,12 +17,12 @@
      <li> EECS 490 - Programming Languagues</li>
      <li> EECS 492 - Artifical Intelligence</li>
      <li> EECS 493 - User Interface</li>
-     <li> EECS 498 - Information Retervial</li>
-     <li> EECS 574 - Computational Complexity</li>
-     <li> EECS 584 - Advanced Databases Management Systems</li>
      <li> EECS 498 - Distributed Systems</li>
-     <li> EECS 549 - Information Retervial</li>
-     <li> EECS 591 - Advanced Distributed Systems</li>
+     <li> EECS 498 - Information Retervial</li>
+     <li> EECS 549 - Adv. Information Retervial</li>
+     <li> EECS 574 - Computational Complexity</li>
+     <li> EECS 584 - Adv. Databases Management Systems</li>
+     <li> EECS 591 - Adv. Distributed Systems</li>
    </ul>
    <ul class="actions">
      <li><a href="#" class="button">Learn More</a></li>
