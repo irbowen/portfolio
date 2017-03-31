@@ -8,6 +8,7 @@ require_once __DIR__ . '/../../vendor/autoload.php';
 $this->respond('GET', '/', blog_front_page);
 $this->respond('GET', '/[a:post_name]', blog_with_article);
  */
+
 /*
 function blog_front_page($request, $response, $service, $app) {
     $article_data = file(LIST_FILE);
@@ -33,10 +34,6 @@ function show_blog($request, $response, $service, $app) {
     $app->smarty->display('writing.tpl');
 };
 
-/*
- * Helper functions
- */
-
 // Returns the text contents of the article
 function get_article_text($title) : string {
     $full_name = __DIR__ . "/../writing/$title";
@@ -54,7 +51,7 @@ function get_all_article_titles() : array {
     foreach ($article_data as $article) {
         $data = explode(',', $article);
         $title = trim(str_replace('"', '', $data[0]));
-        $link = trim(str_replace('"', '', $data[1]));
+        $link = trim(str_replace('"', '', $data[2]));
         array_push($titles, array('title' => $title, 'link' => $link));
     }
     return $titles;

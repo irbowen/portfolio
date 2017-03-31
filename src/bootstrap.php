@@ -58,12 +58,6 @@ $klein->respond('GET', '/[a:post_name]',
         }
         echo 'Todo: Friendly error page and send an email to the developer';
     });
-/*
-$klein->respond('GET', '/eecs485/',
-    function ($request, $response, $service, $app) {
-        $app->smarty->display('eecs485.tpl');
-    });
- */
 
 foreach (API_ROUTES as $controller) {
     $klein->with("/$controller", "../src/controllers/$controller.php");
